@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SoundCloud</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+	<video playsinline autoplay muted loop poster id="background-video" class="background-video">
+		<source src="assets/videos/nebula.mp4" type="video/webm">
+	</video>
+
+		<audio id="player">
+			<source id="mp3" type="audio/mp3"></source>
+		</audio>
+
+	<div class="jukebox">
+		<div class="controls">
+			<div class="button-container">
+				<div class="pauseButton button" id="pauseButton"></div>
+				<div class="playButton button" id="playButton"></div>
+				<div class="skipButton button" id="skipButton"></div>
+		</div>
+	</div>
+
+		<div class="song-display">
+			<img class="albumArt"></img>
+			<h2 class="display-text"></h2>
+			<h2 class="display-text"></h2>
+			<h2 class="display-text"></h2>
+		</div>
+
+		<div class="soundCloud-container">
+			<input id="soundCloud" class="soundCloud" placeholder="SoundCloud Search"></input>
+			<button class="soundCloud-button">Search</button>
+		</div>
+
+<script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
